@@ -44,6 +44,18 @@ function Navbar() {
         </li>
         <li>
           <NavLink
+            to="/memo"
+            className={({ isActive }) =>
+              isActive
+                ? "bg-purple-500 text-white px-3 py-1 rounded"
+                : "text-black"
+            }
+          >
+            Memo
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/welcome"
             className={({ isActive }) =>
               isActive

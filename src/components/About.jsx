@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-function About() {
-  return (
-    <h1>About</h1>
-  )
-}
+const About = React.memo(({ onClick }) => {
+  console.log("Child rendered");
+  return <button onClick={onClick}>Child Button</button>;
+});
 
 export default About

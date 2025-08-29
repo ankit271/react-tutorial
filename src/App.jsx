@@ -10,6 +10,7 @@ import Admin from "./components/admin/Admin";
 import Settings from "./components/admin/Settings";
 import Users from "./components/admin/Users";
 import Welcome from "./components/welcome";
+import Memo from "./components/Memo";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="contact" element={<Contact />}></Route>
             <Route path="user/:id" element={<User />}></Route>
             <Route path="welcome" element={<Welcome />}></Route>
+            <Route path="memo" element={<Memo />}></Route>
             <Route path="*" element={<NotFound />}></Route>
 
             <Route path="admin" element={<Admin />}>
